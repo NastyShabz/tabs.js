@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>know your tab!</title>
+			<style>
+			    body, html {
+                    margin: 0;
+                    padding: 0;
+			    }
+
+				ul{
+					margin: 0;
+					padding: 0;
+					display: block;
+					overflow: hidden;
+				}
+
+				#all-tabs{
+					width: 600px;
+					overflow: hidden;
+					border: 1px solid #bbb;
+					background: #eee;
+					margin: auto;
+                    box-shadow: 0 0 5px 0 #bbb;
+				}
+
+				.tab{
+					list-style-type: none;
+					float: left;
+					padding: .5em 2em;
+					background: #eee;
+					border-top: 5px solid #eee;
+                    margin-right: 1px;
+				}
+
+				.tab:hover {
+                  background: #f8f8f8;
+				}
+
+				.tab-active {
+                  background: #fff;
+                  border-top-color: #88aaff;
+                  box-shadow: none;
+				}
+
+				.tab-active:hover {
+                  background: #fff;
+				}
+
+				.tab-content {
+					padding: 2em;
+                    background: #fff;
+				}
+
+				.hidden {
+					display: none;
+					visibility: hidden;
+				}
+
+			</style>
+		</head>
+		<body>
+			<div id="all-tabs">
+				<ul>
+					<li class="tab tab-active">English</li>
+					<li class="tab">German</li>
+					<li class="tab">Spanish</li>
+				</ul>
+
+				<div class="tab-contents">
+                  <div class="tab-content tab-content-active">English Content</div>
+                  <div class="tab-content hidden">German Content</div>
+                  <div class="tab-content hidden">Spanish Content</div>
+
+				</div>
+			</div>
+		</body>
+	</html>
